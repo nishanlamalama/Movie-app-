@@ -1,0 +1,69 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,500;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color:#12232E;
+    font-family: 'Ubuntu Mono', monospace;
+    color:#EEFBFB;
+    margin:0;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.movie{
+    background-color: #20364711;
+    margin: 1rem;
+    width:300px;
+    border-radius: 10px;
+    box-shadow: 10px 10px #0b151c;
+    position: relative;
+    overflow:hidden;
+    font-family: 'Poppins', sans-serif;
+}
+.movie img{
+    width:100%;
+}
+.movie-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.header{
+    background-color:#203647;
+    padding :1rem;
+}
+.search{
+     border: 2px solid #203647;
+     border-radius: 50px;
+     color:#203647;
+     font-family: inherit;
+     font-size: 1.2rem;
+     padding: 0.5rem 1.5rem;
+}
+.movie-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:1rem;
+}
+.movieover{
+    background-color: #234358;
+    position: absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    color:White;
+    max-height: 70%;
+    transform:translateY(100%);
+    transition: transform 0.3s ease-in-out;
+    padding: 1rem;
+    overflow:auto;
+}
+.movie:hover .movieover{
+    transform: translateY(0%);
+}
+
